@@ -1,0 +1,4 @@
+Flask
+gunicorn
+flask_wtf
+email_validator
