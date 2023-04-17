@@ -17,7 +17,40 @@ def communities():
   return render_template('communities.html')
 
 
+@app.route('/morningclass')
+def morningclass():
+  return render_template('morningclass.html')
 
+ 
+@app.route('/eveningclass')
+def eveningclass():
+  return render_template('eveningclass.html')
+
+
+@app.route('/boxingclass')
+def boxingclass():
+  return render_template('boxingclass.html')
+
+
+@app.route('/yogaclass')
+def yogaclass():
+  return render_template('yogaclass.html')
+
+
+@app.route('/karateclass')
+def karateclass():
+  return render_template('karateclass.html')
+
+
+@app.route('/saturdayclass')
+def saturdayclass():
+  return render_template('saturdayclass.html')
+
+
+@app.route('/kidsclass')
+def kidsclass():
+  return render_template('kidsclass.html')
+                         
 app.config['SECRET_KEY'] = 'Shiloh-gym' # Set your secret key here
 csrf = CSRFProtect(app)
 
