@@ -6,7 +6,76 @@
     {% include 'nav.html' %}
   </head>
   <body>
-    <h1>Welcome to Shiloh Gym where fitness is greatness </h1>
+    {% include 'banner.html' %}
+    <div class="container">
+    <h1 class="text-center mt-2 mb-4"> About Shiloh gym </h1>
+    <div class="row" style="margin-bottom:16px">
+        <div class="col-md-6">
+    <p class="lead ">
+      Shiloh is fully equipped gym with highly trained trainers and with many packages for each and everyone which are very affordable it has really good services and trust me once you feel at home.  
+    </p>
+        </div>
+        <div class="d-none d-md-block col-md-6">
+        <img src="/static/banner.avif" style="height:220px;border-radius:16px;">
+        </div>
+    </div>
+    <section id="packages" class="bg-light mt-5">
+    <div class="container-lg">
+      <div class="text-center">
+        <h2>Package Plans</h2>
+        <p class="lead text-muted">Choose a package plan to suit you.</p>
+      </div>
+
+      <div class="row my-5 g-0 align-items-center justify-content-center">
+        <div class="col-8 col-lg-4 col-xl-3">
+          <div class="card border-0">
+            <div class="card-body text-center py-4">
+              <h4 class="card-title">Student package</h4>
+              <p class="lead card-subtitle">This is for all students</p>
+              <p class="display-5 my-4 text-primary fw-bold">Ksh 3500</p>
+              <p class="card-text mx-5 text-muted d-none d-lg-block">For you to get this offer you just need to prove that your a student by coming with your student ID this is because of verification purposes.</p>
+              <a href="https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials" class="btn btn-outline-primary btn-lg mt-3">
+                Buy Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-9 col-lg-4">
+          <div class="card border-primary border-2">
+            <div class="card-header text-center text-primary">Most Popular</div>
+            <div class="card-body text-center py-5">
+              <h4 class="card-title">Adult package</h4>
+              <p class="lead card-subtitle">This is for all adults </p>
+              <p class="display-4 my-4 text-primary fw-bold">Ksh 5000</p>
+              <p class="card-text mx-5 text-muted d-none d-lg-block">This is the adult package where you get allocated a trainer who guides you through your workout and helps you in your workout goals.</p>
+              <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+                Buy Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-8 col-lg-4 col-xl-3">
+          <div class="card border-0">
+            <div class="card-body text-center py-4">
+              <h4 class="card-title">Kids package </h4>
+              <p class="lead card-subtitle">This is the kids package</p>
+              <p class="display-5 my-4 text-primary fw-bold">Ksh 6000</p>
+              <p class="card-text mx-5 text-muted d-none d-lg-block">The Kids are also not left behind in shiloh.They also have an opportunity to take part in Yoga and learn Boxing.</p>
+              <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+                Buy Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end container -->
+  </section>
+    <div class="text-center">
+    <a href="mailto:calebmtuweta@gmail.com?subject=Questions%20or%20querries%20about%20Shiloh%20gym%20fam%20&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0AMy%20query%20or%20question%3A%20%3Cyour%20question%20or%20query%3E"class="btn btn-primary btn-lg">Contact Us </a>
+    </div>
     {% include 'footer.html' %}
   </body>
 </html>

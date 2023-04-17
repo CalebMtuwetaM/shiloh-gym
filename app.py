@@ -4,9 +4,18 @@ from flask_wtf.csrf import CSRFProtect
 
 app = Flask(__name__)
 
+
+
+
 @app.route('/')
 def home():
   return render_template('home.html')
+
+
+@app.route('/communities')
+def communities():
+  return render_template('communities.html')
+
 
 
 app.config['SECRET_KEY'] = 'Shiloh-gym' # Set your secret key here
@@ -28,7 +37,7 @@ def login():
     if form.validate_on_submit():
         if form.email.data == 'admin@blog.com' and form.password.data == 'password':
             flash('You have been logged in!', 'success')
-            return redirect(url_for('home'))
+            return redirect(url_for('communities'))
         else:
             flash('Login unsuccessful. Please check username and password','danger')
     return render_template("login.html",title="Login",form=form)
